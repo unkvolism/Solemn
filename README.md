@@ -60,7 +60,7 @@ The command accepts the driver's filename using the `-d` or `--driver-name` flag
 .\solemn.exe --driver-name CursedDriver.sys
 
 # Using the short flag
-.\solemn.exe -d AnotherDriver.dll
+.\solemn.exe -d AnotherDriver.sys
 ```
 
 ## ⚠️ Warning

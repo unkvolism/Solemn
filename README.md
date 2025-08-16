@@ -42,8 +42,8 @@ To build Solemn, you will need the Rust toolchain installed. You can get it from
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/solemn.git
-cd solemn
+git clone https://github.com/unkvolism/Solemn.git
+cd Solemn
 
 # 2. Build the project in release mode
 cargo build --release

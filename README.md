@@ -6,7 +6,7 @@
 
 A command-line tool to manually add drivers to the HVCI (Memory Integrity) custom blocklist on Windows, based on research by Yarden Shafir.
 
-## 📖 Background
+## Background
 
 ### What is HVCI?
 
@@ -28,7 +28,7 @@ An administrator can list the filenames of any drivers they wish to block. When 
 
 **Solemn** provides a safe and convenient command-line interface for managing this list.
 
-## ✨ Features
+## Features
 
 - Adds a specified driver to the `HvciDisallowedImages` blocklist.
 - Checks for administrator privileges before attempting any modifications.
@@ -49,7 +49,7 @@ cd Solemn
 cargo build --release
 ```
 
-## 🚀 Usage
+## Usage
 
 Solemn must be run from a terminal (Command Prompt, PowerShell, etc.) with Administrator privileges.
 
@@ -63,7 +63,7 @@ The command accepts the driver's filename using the `-d` or `--driver-name` flag
 .\solemn.exe -d AnotherDriver.sys
 ```
 
-## ⚠️ Warning
+## Warning
 
 This tool modifies a critical part of the Windows Registry related to system boot and security. Blocking an essential system driver (e.g., disk drivers like `storahci.sys`, `nvme.sys`, core kernel files, or critical chipset drivers) will render your system unbootable.
 
@@ -72,7 +72,7 @@ This tool modifies a critical part of the Windows Registry related to system boo
 - Always have a system recovery plan, such as a Windows installation USB, to access recovery tools and edit the registry offline if needed.
 
 
-## 🧪 Tested Environment
+## Tested Environment
 
 Solemn was tested on:
 
@@ -85,7 +85,7 @@ Microsoft Windows [Version 10.0.26100.4946] (Windows 11)
 > - The blocklist feature operates **only by matching the driver filename on disk** — it does not perform hash or signature checks.
 
 
-## 🙏 Credits and Acknowledgments
+## Credits and Acknowledgments
 
 This tool and its underlying concept are based on the incredible research presented by **Yarden Shafir**.
 

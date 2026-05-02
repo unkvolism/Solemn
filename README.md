@@ -36,7 +36,7 @@ An administrator can list the filenames of any drivers they wish to block. When 
 - Prevents duplicate driver entries from being added to the list.
 - Provides clean, colored command-line output for status, success, and error messages.
 
-## 🛠️ Building
+## Building
 
 To build Solemn, you will need the Rust toolchain installed. You can get it from [rustup.rs](https://rustup.rs/).
 
